@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Profile Image (Circular) -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/message_background"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" /> <!-- Hidden initially -->
+
+    <!-- Message Image -->
+    <ImageView
+        android:id="@+id/messageImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+    <!-- Message Content (Text and Image) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <!-- Message Text -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profileImageCard"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_1" /> <!-- Placeholder image -->
+        </androidx.cardview.widget.CardView><!-- Hidden initially -->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
